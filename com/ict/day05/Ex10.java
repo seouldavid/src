@@ -9,6 +9,7 @@ public class Ex10 {
 		Scanner scan = new Scanner(System.in);
 		int totalCount = 0;
 		int EvenCount = 0;
+		double per = 0.0;
 		exit: while (true) {
 			System.out.print("숫자 입력: ");
 			int su = scan.nextInt();
@@ -32,7 +33,8 @@ public class Ex10 {
 				} else if (num == 2) {
 					System.out.println("전체횟수: " + totalCount);
 					System.out.println("짝수횟수: " + EvenCount);
-					System.out.println("짝수 나온 퍼센트: " + (int)((1.0 * EvenCount / totalCount) * 100*10)/10.0 + "%");
+					per =  (double) (EvenCount / totalCount) * 100 ;
+					System.out.println("짝수 나온 퍼센트: " +(int) (per * 1000)/1000.0 + "%");
 					System.out.println("수고하셨습니다.");
 					break exit;
 				} else {
