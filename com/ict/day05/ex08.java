@@ -1,6 +1,6 @@
 package com.ict.day05;
 
-public class ex08 {
+public class Ex08 {
 
 	public static void main(String[] args) {
 		// break label : 레이블이 지정된 반복문 탈출

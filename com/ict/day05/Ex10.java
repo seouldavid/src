@@ -33,14 +33,14 @@ public class Ex10 {
 				} else if (num == 2) {
 					System.out.println("전체횟수: " + totalCount);
 					System.out.println("짝수횟수: " + EvenCount);
-					per =  (double) (EvenCount / totalCount) * 100 ;
+					per =  (double) (  EvenCount / totalCount) * 100 ;
 					System.out.println("짝수 나온 퍼센트: " +(int) (per * 1000)/1000.0 + "%");
 					System.out.println("수고하셨습니다.");
 					break exit;
 				} else {
 					System.out.println("숫자는 1과 2만 선택하세요.");
 					continue;
-				}
+				} 
 			}
 
 		}
