@@ -28,6 +28,9 @@ public class Ex14 {
 		System.out.println(su);
 		
 		String[] str = {"둘리","희동이","마이콜"};
+		for(int i = 0; i < str.length ;i++) {
+			System.out.println(str[i]);
+		}
 
 	}
 
