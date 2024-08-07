@@ -36,6 +36,15 @@ public class Ex04 {
 		
 		//실제 값
 		System.out.println(su[0][2]);
+		System.out.println();
+		
+		//2차원 배열 출력하기
+		for (int i = 0; i < su.length; i++) {
+			for (int j = 0; j < su.length; j++) {
+				System.out.println(su[i][j]);
+			}
+			System.out.println();
+		}
 	}
 
 }
