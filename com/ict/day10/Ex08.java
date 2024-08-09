@@ -8,15 +8,28 @@ public class Ex08 {
 		Ex07 yoon = new Ex07();
 		
 		System.out.println("minsu-id : " + minsu.id);
-		System.out.println("minsu-id : " + heejin.id);
-		System.out.println("minsu-id : " + sumi.id);
-		System.out.println("minsu-id : " + yoon.id);
+		System.out.println("heejin-id : " + heejin.id);
+		System.out.println("sumi-id : " + sumi.id);
+		System.out.println("yoon -id : " + yoon.id);
 		System.out.println("----------------------");
 		
+		minsu.setId();
+		System.out.println("minsu-nextId : " + Ex07.nextId);
+		System.out.println("heejin-nextId : " + minsu.nextId);
+		System.out.println("sumi-nextId : " + Ex07.nextId);
+		System.out.println("yoon-nextId : " + Ex07.nextId);
+	    
+		minsu.setId();
+		System.out.println("minsu-nextId : " + Ex07.nextId);
+		System.out.println("heejin-nextId : " + minsu.nextId);
+		System.out.println("sumi-nextId : " + Ex07.nextId);
+		System.out.println("yoon-nextId : " + Ex07.nextId);
+		
+		minsu.setId();
 		System.out.println("minsu-nextId : "+ Ex07.nextId);
-		System.out.println("minsu-nextId : "+ minsu.nextId);
-		System.out.println("minsu-nextId : "+ Ex07.nextId);
-		System.out.println("minsu-nextId : "+ Ex07.nextId);
-		System.out.println("minsu-nextId : "+ Ex07.nextId);
+		System.out.println("heejin-nextId : "+ minsu.nextId);
+		System.out.println("sumi-nextId : "+ Ex07.nextId);
+		System.out.println("yoon-nextId : "+ Ex07.nextId);
+		
 	}
 }
