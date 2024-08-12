@@ -10,7 +10,7 @@ public class Ex03 {
 
 	public static void play01() {
 		//static 메서드에서는 instance 변수를 사용할 수 없다.
-		// System.out.println(year);
+		//System.out.println(year);
 		sum = kor + eng + math;
 	}
 
@@ -22,5 +22,6 @@ public class Ex03 {
 	/*
 	 * public static int play03() { // 지역변수에는 static을 붙일 수 없다 static int p = kor +
 	 * eng + math; return p; }
+	 * 
 	 */
 }

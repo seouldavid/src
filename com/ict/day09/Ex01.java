@@ -18,7 +18,7 @@ public class Ex01 {
 		     	            물론, 메서드처럼 기능들을 추가할 수 도 있다.
 		     	            클래스이름 = 저장이름 = 생성자
 		     	            클래스이름과 같으면서 () 가 있으면 생성자 이다.
-     	                
+     	               
      	     예) Scanner  scan   =   new     Scanner(System.in)
      	        클래스    참조변수  =  객체생성   생성자  
      	        	 
