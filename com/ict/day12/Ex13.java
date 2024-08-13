@@ -1,31 +1,19 @@
-package com.ict.day11;
+package com.ict.day12;
 
 import java.util.Scanner;
 
-public class Ex10 {
-
+public class Ex13 {
 	public static void main(String[] args) {
-		// Ex10을 객체로 만들어서 배열에 넣자
-		Ex09 coffee = new Ex09();
-		coffee.setName("커피");
-		coffee.setPrice(1800);
-
-		Ex09 ion = new Ex09();
-		ion.setName("이온");
-		ion.setPrice(2300);
-
-		Ex09 cola = new Ex09();
-		cola.setName("콜라");
-		cola.setPrice(2100);
-
-		Ex09[] arr = { coffee, ion, cola };
+		Ex12 coffee = new Ex12("커피",1800);
+		Ex12 ion = new Ex12("이온",2300);
+		Ex12 cola = new Ex12("콜라",2100);
+		Ex12[] arr = { coffee, ion, cola };
 		int tmp = arr[0].getPrice() ;
 		for (int i = 1; i < arr.length; i++) {		
 			if (arr[i].getPrice() < tmp) {
 				tmp =arr[i].getPrice();
 			}
 		}
-		
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.print("금액 투입 >> ");
@@ -53,7 +41,7 @@ public class Ex10 {
 			if (choice < 1 || choice > arr.length || input < arr[choice - 1].getPrice()) {
 				continue;
 			}
-			Ex09 drink = arr[choice - 1];
+			Ex12 drink = arr[choice - 1];
 			input = input - drink.getPrice();
 
 			System.out.println(drink.getName() + "을 선택하셨습니다.");
@@ -87,6 +75,8 @@ public class Ex10 {
 		System.out.println("감사합니다.");
 		System.out.println("잔돈 : " + input + "원");
 		}
-	}
 
+		
+
+	}
 }
