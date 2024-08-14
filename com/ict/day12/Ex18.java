@@ -11,7 +11,6 @@ public class Ex18 {
 	public Ex18(String cardName) {
 		this.cardName = cardName;
 		this.money = 2000000;
-
 	}
 
 	public Ex18(String cardName, int money) {

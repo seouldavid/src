@@ -17,7 +17,7 @@ public class Ex13 {
 		//str 출력
 		for (int i = 0; i < str.length; i++) {
 			System.out.println(str[i]);
-		}	
+		}
 		System.out.println(Math.round(3.5));
 		
 	}

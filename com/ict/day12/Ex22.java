@@ -13,6 +13,8 @@ public class Ex22 {
 		System.out.println(test.su4);
 		System.out.println(Ex21.su3);
 		System.out.println(Ex21.su4);
+		System.out.println(Ex21.su5);
+		System.out.println(Ex21.su7);
 	}
 
 }

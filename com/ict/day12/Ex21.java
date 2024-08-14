@@ -27,7 +27,8 @@ public class Ex21 {
 		su3 = 5000;
 		su4 = 5000;
 		su5 = 5000;
+		su7 = 6000;
 	}
-	static int su5 = 4000;// => 4000
+	static int su5 ;// => 4000
 	static int su7;       // => 5000
 }

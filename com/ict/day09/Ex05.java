@@ -28,7 +28,6 @@ public class Ex05 {
 		System.out.println("메소드안 처리전");
 		sum = kor + eng + math;
 		System.out.println("메소드안 처리후");
-
 	}
 	public int play02(){
 		int k = kor + eng + math;

@@ -4,7 +4,7 @@ public class Ex04 {
 	int age = 18;
 	public static void main(String[] args) {
 		//main()도 static이므로 age를 사용할 수 없다.
-		//System.out.println(age);
+//		System.out.println(age);
 		
 		//static 멤버필드와 멤버 메서드는 객체 생성없이 사용 가능
 		//static 멤버필드와 멤버 메서드에 접근하는 방법 : 

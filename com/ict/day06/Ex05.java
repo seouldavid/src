@@ -81,7 +81,7 @@ public class Ex05 {
 	byte[] b1 = s7.getBytes();for(
 	int i = 0;i<b1.length;i++)
 	{
-		System.out.println(b1[i] + ":-" + (char) (b1[i]));
+		System.out.println(b1[i] + ":--------" + (char) (b1[i]));
 	}
 
 	// 8.toCharArray():chr[]
