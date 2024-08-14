@@ -21,7 +21,6 @@ public class Ex03 {
 		LocalDateTime day3 = now.plusDays(7);
 		System.out.println("일주일 후 : " + day3);
 		
-		
 		LocalDateTime day4 = now.minusDays(7);
 		System.out.println("일주일 전 : " + day4);
 		
@@ -32,7 +31,7 @@ public class Ex03 {
 		// 날짜와 시간 포멧
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String msg = now.format(formatter);
-		System.out.println(msg);
+		System.out.println(msg);	
 	}
 
 }
