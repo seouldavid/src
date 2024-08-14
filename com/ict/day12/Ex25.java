@@ -41,10 +41,23 @@ public class Ex25 {
 		
 		// set 메서드로 날짜 설정
 		Calendar now2 = Calendar.getInstance();
-		now2.set(Calendar.YEAR, 2023);
-		now2.set(Calendar.MONTH, 11);
-		now2.set(Calendar.DAY_OF_MONTH, 25);
+		now2.set(Calendar.YEAR, 2024);
+		now2.set(Calendar.MONTH, 7);
+		now2.set(Calendar.DAY_OF_MONTH, 13);
 		System.out.println(now2.getTime());
+		
+		//January 1, 1970 00:00:00.000 => 밀리초로 계산 한 값 => 1/1000
+		System.out.println(now.getTimeInMillis());
+		System.out.println(System.currentTimeMillis());
+		
+		//현재 시간
+		Calendar now3 = Calendar.getInstance();
+		//두 날짜 차이 구하기
+		long diff = now3.getTimeInMillis()- now2.getTimeInMillis();
+		System.out.println(diff/(60*60*24*1000));
+		
+		now3.add(Calendar.DATE, 1);
+		System.out.println(now3.getTime());
 	}
 
 }
