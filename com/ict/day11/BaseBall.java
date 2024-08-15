@@ -3,6 +3,8 @@ package com.ict.day11;
 import java.util.Scanner;
 
 public class BaseBall {
+	
+	//중복체크 메서드입니다
 	public static boolean checkOverlap(int[] arr, int num) {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == num) {
@@ -13,7 +15,7 @@ public class BaseBall {
 	}
 
 	public static void main(String[] args) {
-
+		//변수 및 배열 초기화
 		Scanner scan = new Scanner(System.in);
 		int strikeNum = 0;
 		int ballNum = 0;
@@ -23,7 +25,9 @@ public class BaseBall {
 		boolean chk;
 
 		int cnt = 0;
-
+		
+		
+		//배열에 난수를 생성할때까지 반복합니다 
 		for (int i = 0; i < genNums.length; i++) {
 			do {
 				tmp = (int) (Math.random() * 9) + 1;
