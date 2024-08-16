@@ -15,11 +15,11 @@ public class Ex02 {
 		// 1. Date 클래스
 		Date date = new Date();
 		System.out.println(date);
-
+		Date today = new Date();
 		// 기본형태 변환
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
 		System.out.println(sdf.format(date));
-
+		
 		SimpleDateFormat sdf2 = new SimpleDateFormat("yy-M-d H:m:s");
 		System.out.println(sdf2.format(date));
 		

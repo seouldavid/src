@@ -12,6 +12,7 @@ package com.ict.day13;
 //		없으면 Object 클래스가 부모클래스이다.(생략되어있음)
 //		모든 클래스는 Object 클래스를 부모 클래스로 가지고 있다.
 //		다중 상속을 지원하지 않는다.(부모클래스가 하나만 존재한다.)
+
 public class Ex04_Sub extends Ex04_Sup {
 	String name = "홍반장";
 	int age = 14;

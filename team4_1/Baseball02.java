@@ -10,7 +10,7 @@ public class Baseball02 {
 	public int[] getUser() { // user getter
 		return user;
 	}
-	
+
 	public void setUser(int[] user) { // user setter
 		this.user = user;
 	}
