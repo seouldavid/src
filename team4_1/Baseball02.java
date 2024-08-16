@@ -10,13 +10,13 @@ public class Baseball02 {
 	public int[] getUser() { // user getter
 		return user;
 	}
-
+	
 	public void setUser(int[] user) { // user setter
 		this.user = user;
 	}
 	
 	
-	public void play01() { // 유저의 수 입력받고 비교하는 메서드
+	public void userInput() { // 유저의 수 입력받고 비교하는 메서드
 	for (int i = 0; i < user.length; i++) { //0 1 2  배열 포문 
         System.out.print((i+1) + " 번 숫자 입력 : ");
         user[i] = scan.nextInt(); //입력수는 user[0] 부터 진행. 

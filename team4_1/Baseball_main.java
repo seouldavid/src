@@ -9,11 +9,11 @@ public class Baseball_main {
 
 		// 중복검사기도 여기있음
 		int cnt = 0; // 입력수(회차) 초기값 0 설정
-		int[] com = Baseball01.randNumGenerator(); // int[] com배열 선언
+		int[] com = Baseball01.randNumGenerator(); // int[] com배열 선언 randNumGenerator()메서드로 중복없는 난수 배열 생성
 		esc: while (true) {
 			Baseball02 t2 = new Baseball02(); // 입력수 클래스 불러오기
 			
-			t2.play01();// 내 입력수 메서드 진행
+			t2.userInput();// 내 입력수 메서드 진행
 			t2.getUser();// 내 입력수 불러오기.(private 수여서)
 			int[] user = t2.getUser(); // int[] user 배열 선언.
 			
