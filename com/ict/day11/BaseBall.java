@@ -13,6 +13,7 @@ public class BaseBall {
 		}
 		return false;
 	}
+	
 
 	public static void main(String[] args) {
 		//변수 및 배열 초기화
@@ -39,17 +40,25 @@ public class BaseBall {
 		while (true) {
 			int[] guessNums = new int[3];
 			for (int i = 0; i < guessNums.length; i++) {
-				do {
+				 do {
+					
 					System.out.print((i + 1) + "번째 숫자 입력:");
 					tmp = scan.nextInt();
 					chk = checkOverlap(guessNums, tmp);
+					
 					if (tmp > 9 || tmp < 0) {
+						
 						System.out.println("1-9 사이 숫자를 입력하여 주십시오.");
-						continue;
-					} else if (chk) {
+						chk = true;
+					} 
+					
+					if (chk) {
 						System.out.println("입력된 숫자가 중복되었습니다.");
 					}
+					
 				} while (chk);
+				 
+				 
 				guessNums[i] = tmp;
 			}
 
