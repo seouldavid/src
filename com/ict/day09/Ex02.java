@@ -5,7 +5,7 @@ public class Ex02 {
 	// 멤버필드 : 데이터 ,상태값, 속성
 	//		1.변수 : 언제든지 변할 수 있는 데이터, 속성, 메모리 상태
 	//		2.상수 : 한번 지정하면 벼녕할 수 없는 데이터, 속성, 메모리 상태
-	
+
 	//instance 멤버필드, static 멤버필드
 	// 1. instance 멤버필드 : 객체 생성할 때 같이 만들어지는 멤버필드
 	//			   호출방법 : 참조변수.변수이름
@@ -14,8 +14,9 @@ public class Ex02 {
 	//    static은 반드시 static이라는 예약어를 사용해야 한다.
 	//
 	// 3. final 변수 => 상수
-	
+
 	String name = "홍길동";
+	
 	final int AGE = 27;
 	static double height =179.14;
 	static final char HAK = 'A';

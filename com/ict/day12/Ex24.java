@@ -24,12 +24,14 @@ public class Ex24 {
 		System.out.println(sdf2.format(date));
 		
 		// 년, 월 ,일 ,시 ,분 , 초, 요일 -> 시스템상의 년, 월 ,일 ,시 ,분 , 초,
+		
 		System.out.println(date.getYear() +1900); // 현재년도 - 1900
 		System.out.println(date.getMonth() + "월");
 		System.out.println(date.getDate()+ "일");
 		System.out.println(date.getHours()+"시");
 		System.out.println(date.getMinutes()+"분");
 		System.out.println(date.getSeconds()+"초");
+		
 		
 		int k = date.getDay();
 		switch (k) {
