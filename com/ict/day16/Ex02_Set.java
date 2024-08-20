@@ -53,6 +53,14 @@ public class Ex02_Set {
 			int su =  it.next();
 			System.out.println(su+7);
 		}
+		System.out.println();
+		
+		h3.add(3.14);
+		//10은 Double 이 아니라서 안됨
+//		h3.add(10);
+		//
+		
+		
 		
 	}
 }
