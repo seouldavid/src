@@ -7,6 +7,7 @@ public class Ex04 {
 	private int math;
 	private int sum;
 	private double avg;
+	private String hak;
 	
 	
 	
@@ -61,7 +62,6 @@ public class Ex04 {
 	public void setHak(String hak) {
 		this.hak = hak;
 	}
-	private String hak;
 	
 	
 }

@@ -7,7 +7,7 @@ public class Ex04_Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		HashSet<Ex04> students = new HashSet<>();
-		esc:while (true) {
+		esc: while (true) {
 			System.out.print("이름:");
 			String name = scan.next();
 			System.out.print("국어:");
@@ -18,9 +18,10 @@ public class Ex04_Main {
 			int math = scan.nextInt();
 
 			int sum = kor + eng + math;
-			double average =(int)(sum/3.0 *10.0)/10.0;
-			String hak ="";
+			double average = (int) (sum / 3.0 * 10.0) / 10.0;
+			String hak = "";
 			if (average >= 90) {
+				
 				hak = "A 학점";
 			} else if (average >= 80) {
 				
@@ -32,10 +33,9 @@ public class Ex04_Main {
 				
 				hak = "F 학점";
 			}
-			Ex04 student = new Ex04(name,kor,eng,math,sum,average,hak);
+			Ex04 student = new Ex04(name, kor, eng, math, sum, average, hak);
 			students.add(student);
 			while (true) {
-				
 				System.out.println("학생 추가하시겠습니까? y/n");
 				String choice = scan.next();
 				if (choice.equalsIgnoreCase("y")) {
@@ -44,7 +44,6 @@ public class Ex04_Main {
 					break esc;
 				} else {
 					System.out.println("다시 입력해 주십시오.");
-					
 				}
 			}
 		}

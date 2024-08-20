@@ -35,5 +35,18 @@ public class Ex05 {
 		
 		System.out.println("set2 요소 보기");
 		System.out.println(set2);
+		
+		System.out.println("set2 전체 삭제");
+		set2.clear();
+		System.out.println(set2);
+		System.out.println();
+		
+		System.out.println("set2 비어있는지 확인하는 것");
+		if (set2.isEmpty()) {
+			System.out.println("set2 비어있음");
+		} else {
+			System.out.println("set2 내용이 있음");
+
+		}
 	}
 }
