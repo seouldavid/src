@@ -7,7 +7,9 @@ public class Ex10 {
 	public static void main(String[] args) {
 
 		/*
-		 * List 인터페이스: 배열과 흡사한 구조 삽입, 삭제, 추가가 자유롭다. 크기를 미리 지정하지 않아도 된다.중복 가능. List 를 구현한 클래스 :
+		 * List 인터페이스: 배열과 흡사한 구조 삽입, 삭제, 추가가 자유롭다.
+		 *  크기를 미리 지정하지 않아도 된다.중복 가능. 
+		 *  List 를 구현한 클래스 :
 		 * Stack, Vector, ArrayList 구조 : LIFO(Last In First Out) 마지막에 들어온 데이터가 가장 먼저 나가는
 		 * 형태 add, push, addElement => 추가 add(index, E) => 삽입 pop : 스택에서 맨 위에 존재하는 객체 반환
 		 * 후 삭제 된다. peek: 스택에서 맨 위에 존재하는 객체 반환 후 삭제 되지 않는다. contains(Element e):boolean
@@ -21,7 +23,7 @@ public class Ex10 {
 		s1.add("둘리");
 		s1.push("송실이");
 		s1.addElement("마이콜");
-
+		
 		// 삽입
 		s1.add(1, "희동이");
 		s1.addFirst("고길동");
