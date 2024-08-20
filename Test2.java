@@ -7,12 +7,12 @@ public class Test2 {
 		try {
 			divide(a,b);
 		} catch (IOException e) {
-			System.out.println("하이");
+			System.out.println("ioexception");
 //			e.printStackTrace();
 }
 }
 
-	public static void divide(int a, int b) throws ArithmeticException, IOException {
+	public static void divide(int a, int b) throws IOException  {
 		throw new IOException();
 	
 }
