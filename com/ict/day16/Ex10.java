@@ -28,8 +28,8 @@ public class Ex10 {
 		s1.add(1, "희동이");
 		s1.addFirst("고길동");
 		s1.addLast("도우너");
-
 		System.out.println(s1);
+		
 
 		// 마지막 객체 pop(삭제), peek(삭제 안함)
 		String res = s1.pop();

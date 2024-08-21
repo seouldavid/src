@@ -14,6 +14,7 @@ public class Ex11 {
 		//			   여러 쓰레드가 동시에 접근하는 상황에서 문제 발생할 수 있다.
 		// Vector	 : 멀티쓰레드에서 동기화 지원 O
 		//				여러 스레드가 동시에 접근하는 상황에서 문제를 해결한다.
+		// 부모선어:대체가 가능함
 		List<String> list = new ArrayList<String>();
 		List<String> vector = new Vector<String>();
 		ArrayList<String> list2 = new ArrayList<String>();
@@ -85,8 +86,7 @@ public class Ex11 {
 		if (list.isEmpty()) {
 			System.out.println("비어 있음");
 		} else {
-			System.out.println("하나라도 있음");
-			
+			System.out.println("하나라도 있음");	
 		}
 		
 		
