@@ -1,29 +1,23 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 class Test100{
 	
 	public static void main(String[] args) {
-		Animal lion = new Lion();
 		
-		lion.size();
-	}
-}
-interface Animal {
-	public void size();
-}
-
-class Lion implements Animal{
-
-	@Override
-	public void size() {
-		System.out.println("중형 사이즈");
+//		Integer[] arr = new Integer[] {1,2,3};
+		List<Integer> list = new ArrayList<Integer>(5);
+		Iterator<Integer> itr = list.iterator();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		while (itr.hasNext()) {
+			Integer in = (Integer)itr.next();
+			System.out.println(in);
+			
+		}
 		
-	}
-	
-}
-class Rabbit implements Animal{
-	
-	@Override
-	public void size() {
-		System.out.println("소형 사이즈");
 		
 	}
 }
