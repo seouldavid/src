@@ -6,7 +6,8 @@ public class Ex15 implements Runnable {
 	@Override
 	public synchronized void run() {
 		for (int i = 1; i < 101; i++) {
-			System.out.println(Thread.currentThread().getName() + " : " + ++x);
+//			notify();
+			System.out.println(Thread.currentThread().getName() + " : " + ++this.x);
 			if (x % 50 ==0) {
 				try {
 					wait();
@@ -14,11 +15,11 @@ public class Ex15 implements Runnable {
 					e.printStackTrace();
 				}
 			} else if(x % 50 ==1) {
-				notify();
-//				System.out.println(Thread.currentThread().getName()+"가동 중");
+				notifyAll();
+				System.out.println(Thread.currentThread().getName()+"가동 중");
 			}
 		}
-		notify();
-//		System.out.println("노티파이");
+		this.notifyAll();
+		System.out.println("노티파이");
 	}	
 }	
