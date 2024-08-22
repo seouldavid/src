@@ -19,16 +19,12 @@ public class Ex07_bear {
 		String fileName2 = path2.toString();
 		File file = new File(fileName);
 		File file2 = new File(fileName2);
-		FileInputStream fis = null;
 		BufferedInputStream bis =null;
 		BufferedOutputStream bos =null;
-		FileOutputStream fos = null;
 		try {
-			fis= new FileInputStream(file);
-			bis= new BufferedInputStream(fis);
+			bis= new BufferedInputStream(new FileInputStream(file));
 			
-			fos= new FileOutputStream(file2);
-			bos= new BufferedOutputStream(fos);//buffered why?
+			bos= new BufferedOutputStream(new FileOutputStream(file2));//buffered why?
 			//배열방식
 //			byte[] code = new byte[(int)(file.length())];
 //			bis.read(code);
@@ -55,8 +51,6 @@ public class Ex07_bear {
 			e.printStackTrace();
 		} finally {
 			try {
-				fis.close();
-				fos.close();
 				bos.close();
 				bis.close();
 			} catch (IOException e) {

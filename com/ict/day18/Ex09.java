@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 // - 반드시 입력 순서와 출력 순서를 맞춰야 한다.										
 public class Ex09 {
 	public static void main(String[] args) {
-		Path path = Paths.get("D:", "davidlee", "util", "0822-3.txt");
+		Path path = Paths.get("D:", "davidlee", "util", "0822-4.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
 		
@@ -26,9 +26,7 @@ public class Ex09 {
 		DataOutputStream dos = null;
 		DataInputStream dis = null;
 		try {
-			fos = new FileOutputStream(file);
-			bos = new BufferedOutputStream(fos);
-			dos = new DataOutputStream(bos);
+		dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
 			
 			//writeXX(값) => XX 자료형
 			dos.writeInt(123);

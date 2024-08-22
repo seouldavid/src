@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 //				자동 플러쉬 기능과 예외처리를 하지 않는다.
 public class Ex10 {
 	public static void main(String[] args) {
-		Path path = Paths.get("D:", "davidlee", "util", "0822-4.txt");
+		Path path = Paths.get("D:", "davidlee", "util", "0822-5.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
 		PrintStream ps =null;
