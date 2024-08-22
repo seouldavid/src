@@ -1,16 +1,16 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.Scanner;
+
 
 class Test100 {
 
 	public static void main(String[] args) {
-		int choice =(int) (Math.random() * 2);
+		Test test = new Test();
 		
-	String[] menu ={"부대찌개","쭈꾸미"};
-	System.out.println(menu[choice]);
-	
-		
+		Thread t1 =new Thread(test,"aa");
+		t1.start();
+		Thread t2 =new Thread(test,"bb");
+		t2.start();
+//		t1.no;
+		Thread t3 =new Thread(test,"cc");
+		t3.start();
 	}
 }

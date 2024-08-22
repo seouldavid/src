@@ -1,28 +1,21 @@
-//
-//public class Test {
-//
-//	public static void main(String[] args) {
-//		Employee john = new Employee();
-//		Son son = new Son();
-//		System.out.println("하이");
-//		shout();
-//		son.parentMethod();
-//	}
-//
-//	@Deprecated
-//	public static void shout() {
-//		System.out.println("하잉 ");
-//	}
-//}
-//
-//class Parent {
-//	void parentMethod() {}
-//}
-//
-//class Son extends Parent {
-//	@Override
-//	@Deprecated
-//	void parentMethod() {
-//		System.out.println("");
-//	}
-//}
+class Test implements Runnable {
+	public synchronized void notes() {
+		this.notify();
+	}
+	@Override
+	public synchronized void run() {
+		for (int i = 0; i < 100; i++) {
+			
+			System.out.println("hihi" + Thread.currentThread().getName() + " -- " + i);
+			if (i==50) {
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} 
+		}
+		
+	}
+}
