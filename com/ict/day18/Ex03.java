@@ -25,6 +25,8 @@ import java.nio.file.Paths;
     		대상 : 객체
     	최상위 클래스 : ObjectInputStream(readObject() => 객체 역 직렬화)
     				ObjectOutputStream(writeObject() => 객체 직렬화)
+    
+    
  */
 public class Ex03 {
 	public static void main(String[] args) {
@@ -37,7 +39,7 @@ public class Ex03 {
 		// String 클래스 getBytes()를 이용하면 byte[]로 만들어진다.
 		// 3.flush() :출력 버퍼 용량이 다차지 않아도 바로 출력하게 만드는 메서드
 		// 4.close() : 출력 스트림 닫기
-
+		// 
 		// 파일 만들 경로 지정 :path
 		Path path = Paths.get("D:", "davidlee", "util", "0822-1.txt");
 		String pathName = path.toString();
@@ -63,7 +65,6 @@ public class Ex03 {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			try {
@@ -72,6 +73,5 @@ public class Ex03 {
 				System.out.println(e);
 			}
 		}
-
 	}
 }
