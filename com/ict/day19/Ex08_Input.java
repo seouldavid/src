@@ -14,7 +14,7 @@ import java.util.List;
 public class Ex08_Input {
 public static void main(String[] args) {
 	//1. 읽어올 파일의 위치
-	Path path = Paths.get("D:", "davidlee", "util", "0823-4.txt");
+	Path path = Paths.get("D:", "davidlee", "util", "0823-5.txt");
 	String pathName = path.toString();
 	File file = new File(pathName);
 	

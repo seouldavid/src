@@ -18,7 +18,7 @@ public class Ex08_Output {
 		Ex08_VO vo3 = new Ex08_VO("cc", 18, 70, false);
 		Ex08_VO vo4 = new Ex08_VO("dd", 16, 67, true);
 		
-		Path path = Paths.get("D:", "davidlee", "util", "0823-4.txt");
+		Path path = Paths.get("D:", "davidlee", "util", "0823-5.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
 		FileOutputStream fos = null;

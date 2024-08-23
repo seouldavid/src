@@ -12,6 +12,9 @@ public class Ex08_VO implements Externalizable{
 	private int age;
 	private double weight;
 	private boolean gender;
+	
+	public Ex08_VO() {
+	}
 
 	public Ex08_VO(String name, int age, double weight, boolean gender) {
 		super();
@@ -29,8 +32,6 @@ public class Ex08_VO implements Externalizable{
 		out.writeObject(age);
 		out.writeObject(weight);
 		out.writeObject(gender);
-		
-		
 	}
 	
 	@Override
@@ -40,6 +41,7 @@ public class Ex08_VO implements Externalizable{
 		age =  (int) in.readObject();
 		weight =  (double) in.readObject();
 		gender =  (boolean) in.readObject();
+		
 	}
 
 	public String getName() {
