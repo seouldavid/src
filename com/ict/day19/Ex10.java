@@ -19,6 +19,7 @@ public class Ex10 {
 		Path path = Paths.get("D:", "davidlee", "util", "0823-6.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
+		System.out.println(file.exists());
 		
 		InputStream is = null;
 		FileWriter fw = null;

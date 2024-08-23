@@ -18,6 +18,8 @@ public class Ex07_Input {
 		Path path = Paths.get("D:", "davidlee", "util", "0823-4.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
+//		Path path = Paths.get(null);
+//		String pathName = path.toString();
 		
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;

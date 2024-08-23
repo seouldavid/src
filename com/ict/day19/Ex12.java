@@ -38,20 +38,20 @@ public class Ex12 {
 		    is = conn.getInputStream();
 		    isr = new InputStreamReader(is);
 		    br = new BufferedReader(isr);
-//		    //한줄 읽어서 저장하기
-//		    String msg = null;
-//		    //msg를 append()를 이용해서 누적 저장하기
-//		    StringBuffer sb = new StringBuffer();
-//		    while ((msg = br.readLine()) != null) {
-//				sb.append(msg+"\n");
-//			}
-//		    System.out.println(sb);
-//		    
-//		    //파일로 저장하기
-//		    fw = new FileWriter(file);
-//		    bw = new BufferedWriter(fw);
-//		    bw.write(sb.toString());
-//		    bw.flush();
+		    //한줄 읽어서 저장하기
+		    String msg = null;
+		    //msg를 append()를 이용해서 누적 저장하기
+		    StringBuffer sb = new StringBuffer();
+		    while ((msg = br.readLine()) != null) {
+				sb.append(msg+"\n");
+			}
+		    System.out.println(sb);
+		    
+		    //파일로 저장하기
+		    fw = new FileWriter(file);
+		    bw = new BufferedWriter(fw);
+		    bw.write(sb.toString());
+		    bw.flush();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

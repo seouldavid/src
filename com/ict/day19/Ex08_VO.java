@@ -1,9 +1,12 @@
 package com.ict.day19;
 
+import java.io.BufferedWriter;
 import java.io.Externalizable;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
+import java.io.OutputStreamWriter;
 import java.io.Serializable;
 
 // 2. Externalizable
@@ -12,10 +15,10 @@ public class Ex08_VO implements Externalizable{
 	private int age;
 	private double weight;
 	private boolean gender;
-	
+
 	public Ex08_VO() {
 	}
-
+	
 	public Ex08_VO(String name, int age, double weight, boolean gender) {
 		super();
 		this.name = name;

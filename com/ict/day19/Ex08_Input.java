@@ -31,7 +31,7 @@ public static void main(String[] args) {
 		System.out.println("이름\t나이\t몸무게\t성별");
 		for (Ex08_VO k : list) {
 			System.out.print(k.getName()+"\t");
-			System.out.print(k.getAge()+"\t");
+			System.out.print(k.getAge()+"\t"); 
 			System.out.print(k.getWeight()+"\t");
 			if (k.isGender()) {
 				System.out.println("남성");

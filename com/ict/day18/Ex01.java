@@ -11,7 +11,8 @@ import java.nio.file.Paths;
 								
 	- 주요메서드 : createNewFile() 	:파일생성
 				mkdir(), mkdirs() :디렉토리 생성
-				delete				:삭제
+				delete()				:삭제
+
 				isFile()			:파일이면 true
 				isDirectory()		:디렉토리이면 true
 				exists()			:있으면 true
