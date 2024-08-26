@@ -41,7 +41,7 @@ import org.xml.sax.InputSource;
 
 // DOM(Document Object Modeling) 방식 : 웹 브라우저가 태그를 해석하고 표현하는 방식
 
-public class Ex01_DOM {
+public class Ex01_DOM2 {
 	public static void main(String[] args) {
 		InputStream is = null;
 		InputStreamReader isr = null;
@@ -82,19 +82,10 @@ public class Ex01_DOM {
 			Document document = builder.parse(in);
 			
 			//원하는 태그찾기
-			//<weather year="2024" month="08" day="24" hour="17"> 년월일시 추출
-			Element weather = (Element)document.getElementsByTagName("weather").item(0);
-			String y = weather.getAttribute("year");
-			String m = weather.getAttribute("month");
-			String d = weather.getAttribute("day");
-			String h = weather.getAttribute("hour");
 			//NodeList => 배열로 취급하자
 			NodeList locals =document.getElementsByTagName("local");
 			//추출 데이터를 저장하기 위해 필요
 			StringBuffer sb2 = new StringBuffer();
-			sb2.append("날짜 : ").append(y).append(". ").append(m)
-				.append(". ").append(d).append(". ").append(h).append("시 \n");
-			
 			for (int i = 0; i < locals.getLength(); i++) {
 				//텍스트 추출
 				String txt =locals.item(i).getFirstChild().getNodeValue();
