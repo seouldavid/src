@@ -11,9 +11,9 @@ import java.io.Serializable;
 
 // 2. Externalizable
 public class Ex08_VO implements Externalizable{
-	private String name;
-	private int age;
-	private double weight;
+	transient private String name;
+	transient private int age;
+	transient private double weight;
 	private boolean gender;
 
 	public Ex08_VO() {

@@ -41,16 +41,17 @@ public class Ex10 {
 			//String 에 여러번 + 사용하면 메모리에 슬데 없는 공간이 만들어진다.
 			//그것을 해결하기 위해서 Stringbuffer나 StringBuilder를 사용한다.
 			//append()로 추가하면 된다.
+			bfw.write("starting line===============");
 			StringBuffer result = new StringBuffer();
 			while ((msg=br.readLine()) != null) {
 				System.out.println(msg);
 //				bfw.write(msg);
 //				bfw.newLine();
 //				ps.println(msg);
-				result=result.append(msg);
+				result.append(msg +"\n");
 //				result = result + msg + "\n";
 			}
-//			bfw.write(result);
+			bfw.write(result.toString());
 			
 			//StringBuffer 사용하였으므로 .toString()이요애서 String으로 만들어준다.
 			bfw.flush();
