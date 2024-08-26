@@ -71,10 +71,11 @@ public class Ex01_DOM {
 			// System.out.println(sb.toString());
 			fw = new FileWriter(file);
 			bw = new BufferedWriter(fw);
-			
+		
 			//파싱하기
 			// 1. 데이터를 파싱하기 위해서 저장
 			InputSource in = new InputSource(new StringReader(sb.toString()));
+//			InputSource in = new InputSource(new StringReader(sb.toStrng))
 			
 			//2. DOM 방식으로 파서(parser) 만들기 (팩토리 패턴, 빌드 패턴)
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -94,6 +95,7 @@ public class Ex01_DOM {
 			StringBuffer sb2 = new StringBuffer();
 			sb2.append("날짜 : ").append(y).append(". ").append(m)
 				.append(". ").append(d).append(". ").append(h).append("시 \n");
+			
 			
 			for (int i = 0; i < locals.getLength(); i++) {
 				//텍스트 추출

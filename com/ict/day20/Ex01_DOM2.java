@@ -88,7 +88,7 @@ public class Ex01_DOM2 {
 			StringBuffer sb2 = new StringBuffer();
 			for (int i = 0; i < locals.getLength(); i++) {
 				//텍스트 추출
-				String txt =locals.item(i).getFirstChild().getNodeValue();
+				String txt =locals.item(i).getLastChild().getNodeValue();
 				//속성 추출
 				String attr1 = ((Element)locals.item(i)).getAttribute("ta"); 
 				String attr2 = ((Element)locals.item(i)).getAttribute("desc"); 
