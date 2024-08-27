@@ -42,12 +42,22 @@ public class Ex03_Server {
 			//받은 메세지를 다시 보낸다.
 			os = socket.getOutputStream();
 			osw = new OutputStreamWriter(os);
+			bw = new BufferedWriter(osw);
+			bw.write(msg);
+			bw.flush();
 			
 			
 		} catch (Exception e) {
 		} finally {
 			try {
-				
+				os.close();
+				osw.close();
+				bw.close();
+				is.close();
+				isr.close();
+				br.close();
+				socket.close();
+				server.close();
 			} catch (Exception e2) {
 				System.out.println(e2);
 			}

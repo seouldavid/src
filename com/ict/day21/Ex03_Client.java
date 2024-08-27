@@ -25,20 +25,35 @@ public class Ex03_Client {
 		try {
 			System.out.println("데이터 입력 : ");
 			String msg = scan.nextLine();
-
+			
 			// 서버 주소와 서버 포트
-			socket = new Socket("192.168.0.35", 7777);
+			socket = new Socket("192.168.0.146", 7777);
 			
 			os = socket.getOutputStream();
 			osw = new OutputStreamWriter(os);
 			bw = new BufferedWriter(osw);
 			
-//			String msg = bw.write(msg);
+			bw.write(msg + "\n");
+			bw.flush();
+			
+			is = socket.getInputStream();
+			isr = new InputStreamReader(is);
+			br = new BufferedReader(isr);
+			
+			String re_msg = br.readLine();
+			System.out.println("받은 정보: "+re_msg);
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		} finally {
 			try {
-
+				os.close();
+				osw.close();
+				bw.close();
+				is.close();
+				isr.close();
+				br.close();
+				socket.close();
 			} catch (Exception e2) {
 				System.out.println(e2);
 			}
