@@ -26,9 +26,11 @@ public class Ex05_Client {
 				public void run() {
 					String msg = null;
 					try {
-						while ((msg=in.readLine())!= null) {
-							
-						}
+//						while ((msg=in.readLine())!= null) {
+//							
+//						}
+						
+						
 					} catch (Exception e) {
 						System.out.println(e);
 					}
@@ -39,7 +41,6 @@ public class Ex05_Client {
 			//사용자가 입력한 메세지를 서버로 보내는 부분
 			
 		} catch (Exception e) {
-			// TODO: handle exception
 			System.out.println(e);
 		} finally {
 			try {
@@ -51,6 +52,5 @@ public class Ex05_Client {
 				System.out.println(e2);
 			}
 		}
-
 	}
 }
