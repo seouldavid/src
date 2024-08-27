@@ -62,7 +62,6 @@ public class Ex02_SAX2 {
 							String d = attributes.getValue("day");
 							String h = attributes.getValue("hour");
 							sb2.append("날짜 : ").append(y + ". ").append(m +". ").append(d +". ").append(h + ". ");
-	
 						}
 						
 						// qName => 태그이름, attributes => 모든 속성을 포함하는 객체
@@ -72,7 +71,6 @@ public class Ex02_SAX2 {
 							txt.setLength(0); // 도시이름 초기화
 							attr1 = attributes.getValue("ta");
 							attr2 = attributes.getValue("desc");
-	
 						}
 					}
 	
