@@ -7,20 +7,20 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 
-public class Ex02_ClientHandler extends Thread {
+public class Ex01_ClientHandler extends Thread {
 	Socket socket;
 	private BufferedReader in;
 	private BufferedWriter out;
 	private String nickName;
 
-	public Ex02_ClientHandler(Socket socket) {
+	public Ex01_ClientHandler(Socket socket) {
 		this.socket = socket;
 		try {
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
 			nickName = in.readLine();
-			Ex02_Server.sendMessage(nickName + "님이 채팅창에 입장했습니다.");
+			Ex01_Server.sendMessage(nickName + "님이 채팅창에 입장했습니다.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -35,13 +35,13 @@ public class Ex02_ClientHandler extends Thread {
 				if (msg.equalsIgnoreCase("exit")) {
 					break;
 				}
-				Ex02_Server.sendMessage(nickName + " : " + msg);
+				Ex01_Server.sendMessage(nickName + " : " + msg);
 			}
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
 			try {
-				Ex02_Server.sendMessage(nickName + "님이 채팅방을 나갔습니다.");
+				Ex01_Server.sendMessage(nickName + "님이 채팅방을 나갔습니다.");
 				in.close();
 				out.close();
 				socket.close();
