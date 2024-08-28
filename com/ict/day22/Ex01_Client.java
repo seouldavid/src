@@ -7,6 +7,8 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+
 public class Ex01_Client {
 	public static void main(String[] args) {
 		Socket socket = null;
@@ -14,6 +16,7 @@ public class Ex01_Client {
 		BufferedWriter out = null;
 		BufferedReader in ;
 		Scanner scan = new Scanner(System.in);
+		Gson gson = new Gson();
 		
 		try{
 			socket = new Socket("192.168.0.35",7777);
