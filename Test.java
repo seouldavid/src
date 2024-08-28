@@ -1,12 +1,11 @@
 class Test {
-	public static int pivo(int n) {
-		if (n==1||n ==0) {
-			return n;
-		}
-		return pivo(n-1)+ pivo(n-2);	
-	}
 
 	public static void main(String[] args) {
-		System.out.println(pivo(50));
+		String name = "이다빛";
+		StringBuffer str =new StringBuffer();
+		for (int i = name.length()-1; i >= 0 ; i--) {
+			str.append(name.charAt(i));
+		}
+		System.out.println(str);
 	}
 }

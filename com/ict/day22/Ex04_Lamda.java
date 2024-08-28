@@ -24,7 +24,8 @@ public class Ex04_Lamda {
 		B b = str -> System.out.println(str);
 		C c = () -> "하이";
 		D d = (x,y) -> x+y;
-		// 실행 방법
+		
+		//실행 방법
 		a.m();
 		b.m("호이");
 		System.out.println(c.m());
