@@ -34,6 +34,7 @@ public class Ex01_JSON {
 		String pathName = path.toString();
 		File file = new File(pathName);
 		BufferedReader in = null;
+		
 		try {
 			//URL 연결
 			URL url = new URL(MAKEUP);
