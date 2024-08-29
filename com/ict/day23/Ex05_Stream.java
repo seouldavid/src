@@ -26,7 +26,11 @@ public class Ex05_Stream {
 		System.out.println();
 		
 		//Stream<Double> two = Stream.generate(() -> Math.random());
-		Stream<Integer> two = Stream.generate(() ->(int) (Math.random()*10));
+		Stream<Integer> two = Stream.generate(() ->{
+			int i = 0;
+			i++;
+			return i;
+		});
 		two.limit(10).forEach(i -> System.out.println(i));
 		
 	}

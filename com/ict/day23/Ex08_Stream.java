@@ -40,5 +40,6 @@ public class Ex08_Stream {
 		s1.skip(4).forEach(i-> System.out.print(i + " "));
 		System.out.println();
 		
+		//
 	}
 }
