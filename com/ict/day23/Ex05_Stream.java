@@ -19,6 +19,7 @@ public class Ex05_Stream {
 		Stream<Integer> even = Stream.iterate(0, n -> n + 2);
 		even.limit(10).forEach(i -> System.out.println(i));
 		System.out.println();
+		
 
 		// static <T> Stream<T> generate(람다식) ; //이전 요소에 독립적
 		Stream<Integer> one = Stream.generate(() -> 1);
