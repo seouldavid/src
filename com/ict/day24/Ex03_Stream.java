@@ -15,6 +15,7 @@ public class Ex03_Stream {
 		System.out.println(op.get()); //hello
 		
 		op = Optional.empty();
+		System.out.println(op);
 		// isPresent() => 데이터가 있을 때 : true
 		if (op.isPresent()) {
 			System.out.println(op);

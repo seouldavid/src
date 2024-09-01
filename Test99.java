@@ -1,13 +1,11 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Test99 {
 public static void main(String[] args) {
-	Gson gson = new GsonBuilder().create();
-	String strJSON = "{'name':'Dip2K','age':44,'car':{'name':'TEST'},'array':['Card1','Card2','Card3'],'map':{'KEY2':200,'KEY1':100,'KEY3':300}}";
-	
-	Person person = gson.fromJson(strJSON, Person.class);
-	System.out.println(person.getArray());
-	System.out.println(person.getMap());
+	int sum3 = stream2.reduce(0, (i,j) -> i+j);
+	num = Arrays.asList(1,2,3,4,5);
+	     Stream<Integer> stream2 = num.stream();
+	     Optoinal sum3 = stream2.reduce(0, (i,j) -> i+j);
 }
 }

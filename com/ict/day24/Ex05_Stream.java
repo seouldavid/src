@@ -16,7 +16,7 @@ public class Ex05_Stream {
 		List<Ex05_VO> list = new ArrayList<Ex05_VO>();
 		list.add(p1);
 		list.add(p2);
-		list.add(p3);
+		list.add(p3); 
 
 		// 컬렉션으로 처리
 

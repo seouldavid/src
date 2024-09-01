@@ -35,17 +35,18 @@ public class Ex02_Stream {
 		.map(i-> i.substring(i.indexOf('.')+1)) // . 다음에 있는 글자부터 끝까지 (확장자만)
 		.distinct()
 		.forEach(i->System.out.println(i));
+		System.out.println();
 		
 		//peek : forEach 처럼 loop 인데 중간처리 , forEach는 최종처리
 		//		 중간에 결과물등 확인 할때 사용
 		Stream<File> stream4 = Stream.of(fileArr);
 		stream4.map(i->i.getName())
 		.filter(i-> i.indexOf('.') != -1)	// . 없으면 (확장자 없으면) 제외
-		.peek(i-> System.out.println(i + "~"))
+		.peek(i-> System.out.println(i + "after. 없으면 (확장자 없으면) 제외"))
 		.map(i-> i.substring(i.indexOf('.')+1)) // . 다음에 있는 글자부터 끝까지 (확장자만)
-//		.peek(i-> System.out.println(i + "~"))
+		.peek(i-> System.out.println(i + "after . 다음에 있는 글자부터 끝까지 (확장자만)"))
 		.distinct()
-//		.peek(i-> System.out.println(i + "~"))
+		.peek(i-> System.out.println(i + "after distinct()"))
 		.forEach(i->System.out.println(i));
 		
 		

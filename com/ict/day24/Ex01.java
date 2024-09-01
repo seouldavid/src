@@ -16,6 +16,8 @@ public class Ex01 {
 
 		// ArrayList -> Stream
 		Stream<String> stream = list.stream();
+		
+		
 		stream.forEach(i -> System.out.print(i + " "));
 		System.out.println();
 

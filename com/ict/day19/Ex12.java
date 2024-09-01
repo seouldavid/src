@@ -7,18 +7,18 @@ import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 //URLConnection 클래스 : 원격지 서버 자원의 결과와 원격지 서버의 헤더 정보를 가져올 수 있다.
 
 public class Ex12 {
 	public static void main(String[] args) {
+		Optional stre = Stream.of(1,2,3,4).reduce((i,j)-> i+j);
+
 		Path path = Paths.get("D:", "davidlee", "util", "0823-7.txt");
 		String pathName = path.toString();
 		File file = new File(pathName);
