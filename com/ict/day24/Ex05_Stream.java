@@ -55,6 +55,13 @@ public class Ex05_Stream {
 		list.stream().filter(i -> i.getAge() >= 20)
 			   .sorted(Comparator.comparing(Ex05_VO::getAge))
 			   .forEach(i -> System.out.println(i));
+		
 		System.out.println("=====================================");
+		Stream<Ex05_VO> stream = list.stream();
+		stream
+		.filter(i -> i.getAge() >= 20)
+		.map(i -> i.getName())
+		.sorted()
+		.forEach(i -> System.out.println(i));
 	}
 }
