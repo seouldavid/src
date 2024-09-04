@@ -63,6 +63,7 @@ public class Ex01_JSON {
 				String brand = product.get("brand").getAsString();
 				String name = product.get("name").getAsString();
 				String price = product.get("price").getAsString();
+//				String[] product_color = product.get("product_colors");
 				String output = String.format("id:%s%nbrand: %s%nname: %s%nprice: %s%n----------%n",id,brand,name,price);
 //				System.out.printf("id:%s%nbrand: %s%nname: %s%nname: %s%nprice: %n----------%n",id,brand,name,price);
 				System.out.println(output);

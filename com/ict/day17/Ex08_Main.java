@@ -10,7 +10,7 @@ public class Ex08_Main {
 		Ex08_Cat cat = new Ex08_Cat();
 		
 		//start() 가 안됨 Runnable에서는 start()가 없음
-//		dog.start();
+//		dog.run();
 		
 		//Thread(Runnable 인터페이스를 상속받은 객체)
 		Thread test1 = new Thread(dog);
@@ -26,6 +26,7 @@ public class Ex08_Main {
 			
 			@Override
 			public void run() {
+				
 				for (int i = 0; i < 100; i++) {
 					System.out.println("aaaa : " + Thread.currentThread().getName() );
 				}

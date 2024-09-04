@@ -15,9 +15,8 @@ public class Ex01 {
 		String pathName = path.toString();
 		File file = new File(pathName);
 		
-		FileWriter fw = null;
-		try {
-			fw = new FileWriter(file);
+		try(FileWriter fw = new FileWriter(file);) {
+			
 			
 			String str = "안녕하세요\nHello\n123123\n\n";
 			fw.write(str);
@@ -27,12 +26,6 @@ public class Ex01 {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			try {
-				fw.close();
-			} catch (Exception e2) {
-				// TODO: handle exception
-			}
 		}
 	}
 }

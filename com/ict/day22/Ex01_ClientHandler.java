@@ -24,6 +24,7 @@ public class Ex01_ClientHandler extends Thread {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 	@Override
@@ -47,6 +48,7 @@ public class Ex01_ClientHandler extends Thread {
 				socket.close();
 			} catch (Exception e2) {
 			}
+			Ex01_Server.removeClient(this);
 		}
 
 	}

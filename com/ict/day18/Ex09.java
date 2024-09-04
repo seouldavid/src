@@ -21,12 +21,13 @@ public class Ex09 {
 		String pathName = path.toString();
 		File file = new File(pathName);
 		
-		FileOutputStream fos = null;
-		BufferedOutputStream bos = null;
-		DataOutputStream dos = null;
-		DataInputStream dis = null;
-		try {
-		dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
+//		FileOutputStream fos = null;
+//		BufferedOutputStream bos = null;
+//		DataOutputStream dos = null;
+//		DataInputStream dis = null;
+		try(DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
+				DataInputStream dis = new DataInputStream(new BufferedInputStream(new FileInputStream(file)))){
+	
 			
 			//writeXX(값) => XX 자료형
 			dos.writeInt(123);
@@ -37,7 +38,7 @@ public class Ex09 {
 			dos.writeInt(98776);
 			dos.flush();
 			
-			dis = new DataInputStream(new BufferedInputStream(new FileInputStream(file)));
+			
 			int k1 = dis.readInt();
 			boolean k2 = dis.readBoolean();
 			double k3 = dis.readDouble();
@@ -56,16 +57,7 @@ public class Ex09 {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			try {
-				fos.close();
-				bos.close();
-				dos.close();
-				dis.close();
-			} catch (Exception e2) {
-				
-			}
-		}
+		} 
 		
 	}
 }

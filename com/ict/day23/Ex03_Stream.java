@@ -19,7 +19,7 @@ public class Ex03_Stream {
 		Integer[] arr01 = {1,2,3,4,5};
 		Stream<Integer> stream01 = Arrays.stream(arr01);
 		stream01.forEach(i->System.out.println(i+100));
-		
+		Stream.of(arr01).forEach(System.out::println);
 		Stream<Integer> stream02 = Arrays.stream(arr01);
 		System.out.println("총 개수: " + stream02.count());
 		//메서드, 없음

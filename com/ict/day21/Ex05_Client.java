@@ -12,7 +12,7 @@ public class Ex05_Client {
 		Socket socket = null;
 		//스레드 처리를 익명클래스에서 초기값으로 
 		BufferedWriter out = null;
-		BufferedReader in = null;
+		BufferedReader in ;
 		Scanner scan = new Scanner(System.in);
 		
 		try{
@@ -26,9 +26,9 @@ public class Ex05_Client {
 				public void run() {
 					String msg = null;
 					try {
-//						while ((msg=in.readLine())!= null) {
+						while ((msg=in.readLine())!= null) {
 //							
-//						}
+						}
 					} catch (Exception e) {
 						System.out.println(e);
 					}
@@ -42,7 +42,7 @@ public class Ex05_Client {
 			System.out.println(e);
 		} finally {
 			try {
-				in.close();
+				
 				out.close();
 				socket.close();
 			} catch (Exception e2) {
