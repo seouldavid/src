@@ -20,7 +20,7 @@ public class Ex05_JDBC {
 			String password = "1111";
 			
 			conn = DriverManager.getConnection(url,user,password);
-			String sql ="update customertbl set name ='둘리', address = '서울 방학동' where name = '장미란'";
+			String sql =String.format("update customertbl set name ='둘리', address = '서울 방학동' where name = '장미란'");
 			stmt = conn.createStatement();
 			int result = stmt.executeUpdate(sql);
 			if (result>0) {
